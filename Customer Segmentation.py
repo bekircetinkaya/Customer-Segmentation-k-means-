@@ -27,6 +27,10 @@ dataset = np.loadtxt('Mall_Customers.txt', dtype=int)
 # Number of Customers in data set
 NumberofSamples = 200
 
+
+# in data set each colums represent CustomerID, Gender, Age,Annual Income (k$),Spending Score (1-100) respectively thus I did not use irrelivent costumer id column
+# Male and Female are represented by 1 and 2 respectively in Gender column
+
 customerset = np.zeros((NumberofSamples, 4), dtype=int)
 for i in range(0, 200, 1):
     customerset[i][0] = dataset[i][1]
